@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <figure class="navbar-logo__img">
+      <img src="../assets/imgs/Logo.png" alt="Logo" />
+    </figure>
+    <p class="navbar-logo__title">Lawliet</p>
+  </div>
+  <include
+    src="./components/nav-list.html"
+    locals='{
+      "classItem": "nav-list__item",
+      "classTitle": "title",
+      "list": "[`CONTACT`, `TESTMONIALS`, `ABOUT`, `TERMS`]"
+    }'
+  ></include>
+  <figure class="navbar-search">
+    <img src="../assets/imgs/SearchOutline.png" alt="searchIcon" />
+  </figure>
+</nav>

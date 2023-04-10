@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+.section1 {
+  background-color: #f2f7ff;
+  height: 786px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-content {
+    width: 420px;
+    &__title {
+      font-family: $playfairdisplay-font;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: 0.3px;
+      color: #2d2f30;
+    }
+
+    &__paragraph {
+      font-family: $poppins-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 0.5px;
+      color: #8b8c8c;
+    }
+  }
+}

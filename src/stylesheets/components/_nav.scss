@@ -1,0 +1,31 @@
+.navbar {
+  max-width: 1100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &-logo {
+    height: 36px;
+    width: 144px;
+    margin: 32px 0 32px 7px;
+    display: flex;
+    align-items: center;
+    &__img {
+      height: 36px;
+      width: 36px;
+      margin-right: 13px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 1.5px;
+      color: #2D2F30;
+      mix-blend-mode: normal;
+    }
+  }
+  &-search {
+    height: 24px;
+    width: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+.card-item {
+  padding: 22px 24px;
+  width: 256px;
+  background-color: #ffffff;
+  &__img {
+    width: 37px;
+    height: 37px;
+    margin-bottom: 18px;
+  }
+  &__title {
+    font-family: $playfairdisplay-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #363940;
+    margin-bottom: 10px;
+  }
+  &__content {
+    font-family: $plusjakartasans-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #8b8c8c;
+  }
+}

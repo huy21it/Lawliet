@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html",
+    "format": "prettier --check --write src/**/*."
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "lint-staged": "^13.2.1",
+    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4",
+    "prettier": "^2.8.7",
+    "sass": "^1.61.0"
+  },
+  "keywords": [],
+  "author": ""
+}

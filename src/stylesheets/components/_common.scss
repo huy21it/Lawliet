@@ -1,0 +1,11 @@
+@use '../utils' as *;
+
+@forward 'nav';
+@forward 'nav-list';
+@forward 'card';
+@forward 'card-list';
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+//Font
+$poppins-font: Poppins;
+$inter-font: Inter;
+$playfairdisplay-font: PlayfairDisplay;
+$plusjakartasans-font: PlusJakartaSans;
+//Breakpoints
+$exception: 280px;
+$small: 400px;
+$extra-small: 640px;
+$medium: 768px;
+$large: 1024px;
+$extra-large: 1280px;
+
+$mobile-small: 320px;
+$mobile-lager: $small;
+$tablet-small: $extra-small;
+$tablet: $medium;
+$desktop: $large;
+$desktop-lager: $extra-large;
+
+// Color
+$primary-color: #ebcb80;
+$background-color: #ffffff;
+
+// Color-text
+$text-color: #4f4f4f;
+$text-sub-color: #4b4b4b;
