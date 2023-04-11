@@ -1,3 +1,49 @@
-<footer>
-  Footer
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo">
+      <figure class="logo__img">
+        <img src="../assets/imgs/Logo-footer.png" alt="" />
+      </figure>
+    </div>
+    <div class="list-item">
+      <include
+        src="./components/footer-list.html"
+        locals='{
+          "title": "Product",
+          "list": "[`Overview`, `Features`, `Tutorials`, `Pricing`, `Releases`]"
+        }'
+      ></include>
+      <include
+        src="./components/footer-list.html"
+        locals='{
+          "title": "Company",
+          "list": "[`About`, `Press`, `Careers`, `Contact`, `Partners`]"
+        }'
+      ></include>
+      <include
+        src="./components/footer-list.html"
+        locals='{
+          "title": "Support",
+          "list": "[`Help Center`, `Terms of service`, `Legal`, `Privacy Policy`, `Status`]"
+        }'
+      ></include>
+    </div>
+  </div>
+  <div class="footer-contact">
+    <div class="footer-contact__label">© 2021 Lawliet. All rights reserved</div>
+    <div class="list-icons">
+      <figure class="list-icons__img">
+        <img src="../assets/imgs/InstagramIcons.png" alt="" />
+      </figure>
+      <figure class="list-icons__img">
+        <img src="../assets/imgs/Social Icons.png" alt="" />
+      </figure>
+      <figure class="list-icons__img">
+        <img src="../assets/imgs/twitter-icon.png" alt="" />
+      </figure>
+      <figure class="list-icons__img">
+        <img src="../assets/imgs/youtube-icon.png" alt="" />
+      </figure>
+    </div>
+  </div>
 </footer>

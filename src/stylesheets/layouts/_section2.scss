@@ -1,0 +1,63 @@
+@use '../utils' as *;
+
+.section2 {
+  background: url('../assets/imgs/bg-section2.png') no-repeat center center / cover;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    font-family: $playfairdisplay-font;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #ffffff;
+  }
+
+  &-description {
+    font-family: $poppins-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #ffffff;
+    margin-bottom: 48px;
+    margin-top: 8px;
+  }
+
+  &-list-count {
+    display: flex;
+
+    .count-item {
+      width: 255px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--center {
+        border-left: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+        border-right: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+      }
+      &__number {
+        font-family: $poppins-font;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 64px;
+        font-feature-settings: 'salt' on, 'liga' off;
+        color: #ffffff;
+      }
+      &__label {
+        font-family: $poppins-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.003em;
+        font-feature-settings: 'salt' on, 'liga' off;
+        color: #ffffff;
+      }
+    }
+  }
+}

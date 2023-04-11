@@ -1,0 +1,74 @@
+@use '../utils' as *;
+
+.bubble {
+  &-content {
+    width: 540px;
+    height: 220px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    position: relative;
+    &__title {
+      font-family: $poppins-font;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      font-feature-settings: 'salt' on, 'liga' off;
+      color: #151617;
+    }
+    &__description {
+      font-family: $poppins-font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      font-feature-settings: 'salt' on, 'liga' off;
+      color: #4f4f4f;
+    }
+    &__arrow-down {
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: -10px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #ffffff;
+    }
+  }
+  &-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    &__avt {
+      width: 56px;
+      height: 56px;
+    }
+    &-info {
+      margin-left: 16px;
+      &__name {
+        font-family: $inter-font;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        font-feature-settings: 'salt' on, 'liga' off;
+        color: #151617;
+      }
+
+      &__position {
+        font-family: $inter-font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        font-feature-settings: 'salt' on, 'liga' off;
+        color: #4f4f4f;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use '../utils' as *;
+
+.section3 {
+  background: url('../assets/imgs/bg-section3.png') no-repeat center center / cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: $playfairdisplay-font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #2d2f30;
+    margin-bottom: 50px;
+  }
+  &-list-bubble {
+    display: flex;
+    gap: 30px;
+  }
+}

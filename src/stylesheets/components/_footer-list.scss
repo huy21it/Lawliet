@@ -1,0 +1,23 @@
+@use '../utils' as *;
+
+.footer-item {
+  width: 160px;
+  &__title {
+    font-family: $inter-font;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #f4f5f7;
+    margin-bottom: 32px;
+  }
+  &__description {
+    font-family: $inter-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #EEEFF4;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,59 @@
+@use '../utils' as *;
+
+.section4 {
+  height: 374px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 150px 40px 150px;
+  &-content {
+    &__title {
+      font-family: $playfairdisplay-font;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: 0.5px;
+      font-feature-settings: 'salt' on, 'liga' off;
+      color: #2d2f30;
+    }
+    &__description {
+      margin-top: 24px;
+      font-family: $poppins-font;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.5px;
+      color: #4f4f4f;
+    }
+    &-contact {
+      width: 219px;
+      height: 64px;
+      background: #094b72;
+      border-radius: 8px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      &__call-logo {
+        width: 28px;
+        height: 32px;
+      }
+      &__label {
+        margin-left: 17px;
+        font-family: $poppins-font;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: 0.5px;
+        color: #f9f8f9;
+      }
+    }
+  }
+  &-avt {
+    img {
+      width: 330px;
+      height: 295px;
+    }
+  }
+}
