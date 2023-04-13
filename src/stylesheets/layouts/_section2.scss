@@ -2,11 +2,11 @@
 
 .section2 {
   background: url('../assets/imgs/bg-section2.png') no-repeat center center / cover;
-  height: 356px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 55px 0;
   &-title {
     font-family: $playfairdisplay-font;
     font-weight: 900;
@@ -15,6 +15,13 @@
     letter-spacing: 0.005em;
     font-feature-settings: 'salt' on, 'liga' off;
     color: #ffffff;
+    @include tablet {
+      text-align: center;
+    }
+    @include mobile {
+      text-align: center;
+      font-size: 36px;
+    }
   }
 
   &-description {
@@ -27,19 +34,37 @@
     color: #ffffff;
     margin-bottom: 48px;
     margin-top: 8px;
+    @include tablet {
+      text-align: center;
+    }
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &-list-count {
     display: flex;
-
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
     .count-item {
       width: 255px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include tablet {
+        width: 200px;
+      }
       &--center {
         border-left: 1px solid rgba($color: #ffffff, $alpha: 0.4);
         border-right: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+        @include mobile {
+          border: none;
+        }
+        @include tablet {
+          text-align: center;
+        }
       }
       &__number {
         font-family: $poppins-font;

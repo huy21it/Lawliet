@@ -1,43 +1,21 @@
 @use 'variables' as *;
 
-@mixin exception{
-  @media screen and (min-width: $exception) and (max-width: calc($mobile-small - 1px)) {
+
+@mixin mobile {
+  @media screen and (max-width: $small) {
     @content;
   }
 }
 
-@mixin mobile-small {
-  @media screen and (min-width: $mobile-small) and (max-width: calc($mobile-lager - 1px)) {
-    @content;
-  }
-}
-
-@mixin mobile-lager {
-  @media screen and (min-width: $mobile-lager) and (max-width: calc($tablet-small - 1px)) {
-    @content;
-  }
-}
-
-@mixin tablet-small {
-  @media screen and (min-width: $tablet-small) and (max-width: calc($tablet - 1px)) {
-    @content;
-  }
-}
 
 @mixin tablet {
-  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  @media screen and (max-width: $medium) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: $desktop) {
-    @content;
-  }
-}
-
-@mixin desktop-lager {
-  @media screen and (min-width: $desktop-lager) {
+  @media screen and (max-width: $large) {
     @content;
   }
 }

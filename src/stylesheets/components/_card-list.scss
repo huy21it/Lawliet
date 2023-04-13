@@ -1,8 +1,12 @@
 @use '../utils' as *;
 
 .card-list {
-  width: 550px;
+  max-width: 550px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @include mobile {
+    justify-content: center;
+    align-items: center;
+  }
 }

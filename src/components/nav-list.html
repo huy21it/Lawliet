@@ -1,7 +1,20 @@
-<div class="nav-list">
-  <each loop="item in {{ list }}">
-    <div class="{{ classItem }}">
-      <a class="{{ classTitle }}">{{ item }}</a>
+<div class="nav-list-{{ device }}">
+
+    <div class="logo">
+      <figure class="logo__img">
+        <img src="../assets/imgs/Logo.png" alt="Logo" />
+      </figure>
+      <p class="logo__title">Lawliet</p>
     </div>
-  </each>
+  <div class="nav-search">
+    <input class="nav-search__input" type="search" placeholder="Search" />
+  </div>
+  <div class="{{ classItem }}">
+    <each loop="item in {{ list }}">
+      <a class="{{ classTitle }}">{{ item }}</a>
+    </each>
+  </div>
+  <figure class="nav-list-search__img">
+    <img src="../assets/imgs/SearchOutline.png" alt="searchIcon" />
+  </figure>
 </div>

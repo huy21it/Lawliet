@@ -2,13 +2,21 @@
 
 .section1 {
   background-color: #f2f7ff;
-  height: 786px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 126px 20px;
+  @include desktop {
+    flex-direction: column;
+  }
   &-content {
-    width: 420px;
+    max-width: 420px;
     margin-right: 50px;
+    @include desktop {
+      margin-right: 0;
+      max-width: 100%;
+      text-align: center;
+    }
     &__title {
       font-family: $playfairdisplay-font;
       font-weight: 700;

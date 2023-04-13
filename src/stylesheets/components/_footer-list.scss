@@ -2,6 +2,9 @@
 
 .footer-item {
   width: 160px;
+  @include tablet {
+    text-align: center;
+  }
   &__title {
     font-family: $inter-font;
     font-weight: 500;

@@ -1,15 +1,102 @@
-.nav-list {
-  width: 450px;
+@use '../utils' as *;
+
+.nav-list-pc {
   height: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 330px;
-  margin-right: 130px;
-  .title {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 23px;
-    letter-spacing: 1.5px;
+  justify-content: space-between;
+  gap: 135px;
+  @include tablet {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .nav-search {
+    display: none;
+  }
+  &__item {
+    cursor: pointer;
+    display: flex;
+    gap: 56px;
+    .title {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 23px;
+      letter-spacing: 1.5px;
+    }
+  }
+  .nav-list-search__img {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.nav-list-mobile {
+  transition: transform linear 0.2s;
+  transform: translateX(100%);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #f0f5fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+  .logo {
+    height: 36px;
+    gap: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    &__img {
+      height: 36px;
+      width: 36px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 1.5px;
+      color: #2d2f30;
+      mix-blend-mode: normal;
+    }
+  }
+  .nav-search {
+    width: 100%;
+    &__input {
+      width: 80%;
+      letter-spacing: 1.5px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      padding: 10px 20px;
+      font-family: $poppins-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    .title {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 23px;
+      letter-spacing: 1.5px;
+    }
+  }
+  .nav-list-search__img {
+    display: none;
   }
 }

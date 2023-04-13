@@ -6,20 +6,38 @@
   align-items: center;
   &-content {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 924px;
+    @include desktop {
+      justify-content: center;
+    }
     .introduction {
       margin-top: 96px;
       position: relative;
-      left: 150px;
+      @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      @include tablet {
+        margin-top: 20px;
+      }
       &-status {
-        width: 434px;
-        height: 40px;
+        max-width: 434px;
         background-color: #e7f6ff;
         border-radius: 26.5px;
         display: flex;
         align-items: center;
         margin-bottom: 18px;
+        @include desktop {
+          justify-content: center;
+        }
+        @include mobile {
+          flex-direction: column;
+        }
         &__btn {
           margin-left: 6px;
           width: 86px;
@@ -27,6 +45,12 @@
           background-color: #094b72;
           color: #ffffff;
           border-radius: 26.5px;
+          border: none;
+          cursor: pointer;
+          &:active {
+            background-color: #1170a7;
+            transform: translateY(4px);
+          }
         }
 
         &__content {
@@ -40,8 +64,7 @@
       }
 
       &__title {
-        width: 800px;
-        height: 216px;
+        max-width: 800px;
         font-family: $playfairdisplay-font;
         font-weight: 700;
         font-size: 90px;
@@ -49,11 +72,14 @@
         letter-spacing: 0.02em;
         color: #094b72;
         margin-bottom: 46px;
+        @include tablet {
+          font-size: 48px;
+          margin-bottom: 10px;
+        }
       }
 
       &__content {
-        width: 590px;
-        height: 76px;
+        max-width: 590px;
         font-family: $plusjakartasans-font;
         font-weight: 500;
         font-size: 24px;
@@ -70,6 +96,12 @@
         background-color: #094b72;
         color: #ffffff;
         margin-bottom: 115px;
+        border: none;
+        cursor: pointer;
+        &:active {
+          background-color: #1170a7;
+          transform: translateY(4px);
+        }
       }
 
       &__companies {
@@ -84,7 +116,8 @@
         margin-top: 30px;
         width: 300px;
         display: flex;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 40px;
         flex-wrap: wrap;
         .airbnb-logo {
@@ -111,34 +144,38 @@
   }
 
   &-portrait {
-    position: relative;
-    right: 130px;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    right: 200px;
+    top: 70px;
     .portrait-bg {
       width: 100%;
       height: 100%;
+      @include desktop {
+        display: none;
+      }
       &__img {
-        width: 750px;
-        height: 970px;
+        width: 100%;
       }
     }
 
     .portrait-content {
-      width: 390px;
+      width: 382px;
       height: 114px;
       background-color: #ffffff;
-      border: 0.05px solid #f4f4f4;
-      box-shadow: #4f4f4f;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative;
-      bottom: 26px;
+      bottom: 80px;
       right: 18px;
+      @include desktop {
+        display: none;
+      }
       &__name {
         font-family: $plusjakartasans-font;
         font-weight: 700;

@@ -1,31 +1,71 @@
+@use '../utils' as *;
+
 .navbar {
   max-width: 1100px;
   height: 100px;
   position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
   &-logo {
+    cursor: pointer;
     height: 36px;
-    width: 144px;
-    margin: 32px 0 32px 7px;
+    gap: 7px;
     display: flex;
     align-items: center;
     &__img {
       height: 36px;
       width: 36px;
-      margin-right: 13px;
     }
     &__title {
       font-weight: 700;
       font-size: 20px;
       line-height: 23px;
       letter-spacing: 1.5px;
-      color: #2D2F30;
+      color: #2d2f30;
       mix-blend-mode: normal;
     }
   }
-  &-search {
+  &__btn {
     height: 24px;
     width: 24px;
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+  &__overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn linear 0.2s;
+  }
+  .navbar__input {
+    display: none;
+  }
+}
+
+.navbar__input:checked ~ .navbar__overlay {
+  display: block;
+}
+
+.navbar__input:checked ~ .nav-list-mobile {
+  transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

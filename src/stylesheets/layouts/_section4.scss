@@ -1,12 +1,23 @@
 @use '../utils' as *;
 
 .section4 {
-  height: 374px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 36px 150px 40px 150px;
+  @include tablet {
+    flex-direction: column;
+  }
   &-content {
+    margin-right: 20px;
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      text-align: center;
+    }
     &__title {
       font-family: $playfairdisplay-font;
       font-weight: 700;
@@ -15,8 +26,10 @@
       letter-spacing: 0.5px;
       font-feature-settings: 'salt' on, 'liga' off;
       color: #2d2f30;
+
     }
     &__description {
+      max-width: 820px;
       margin-top: 24px;
       font-family: $poppins-font;
       font-weight: 400;
@@ -35,6 +48,12 @@
       justify-content: center;
       align-items: center;
       margin-top: 20px;
+      border: none;
+      cursor: pointer;
+      &:active {
+        background-color: #1170a7;
+        transform: translateY(4px);
+      }
       &__call-logo {
         width: 28px;
         height: 32px;
@@ -54,6 +73,10 @@
     img {
       width: 330px;
       height: 295px;
+      @include mobile {
+        width: 280px;
+        height: 250px;
+      }
     }
   }
 }

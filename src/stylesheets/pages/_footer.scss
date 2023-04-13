@@ -2,14 +2,22 @@
 
 .footer {
   background-color: #094b72;
-  height: 502px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   .footer-content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 73px 165px;
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @include desktop {
+      padding: 40px 120px;
+    }
     .logo {
       &__img {
         width: 159px;
@@ -18,6 +26,13 @@
     }
     .list-item {
       display: flex;
+      @include mobile {
+        margin-top: 20px;
+        flex-direction: column;
+      }
+      @include tablet {
+        margin-top: 20px;
+      }
     }
   }
   .footer-contact {
@@ -26,7 +41,11 @@
     justify-content: space-between;
     align-items: center;
     background-color: #004d7b;
-    height: 70px;
+    height: 100px;
+    @include mobile {
+      flex-direction: column;
+      padding: 10px;
+    }
     &__label {
       font-family: $inter-font;
       font-weight: 400;

@@ -2,7 +2,7 @@
 
 .bubble {
   &-content {
-    width: 540px;
+    max-width: 540px;
     height: 220px;
     background: #ffffff;
     border-radius: 10px;
@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     padding: 32px;
+    margin: 10px;
     position: relative;
     &__title {
       font-family: $poppins-font;

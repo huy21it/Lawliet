@@ -2,11 +2,12 @@
 
 .section3 {
   background: url('../assets/imgs/bg-section3.png') no-repeat center center / cover;
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 90px;
   &__title {
     font-family: $playfairdisplay-font;
     font-weight: 700;
@@ -21,5 +22,8 @@
   &-list-bubble {
     display: flex;
     gap: 30px;
+    @include tablet {
+      flex-direction: column;
+    }
   }
 }
